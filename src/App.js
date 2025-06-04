@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import React from 'react';
+import Header from './component/header';
+import MainBanner from './component/main_banner';
+import Promotion from './component/promotion';
+import NewItems from './component/newitems';
+import BRPlay from './component/brplay';
+import BeBetter from './component/bebetter';
+import BrBenefit from './component/brbenefit';
+import Footer from './component/footer';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <MainBanner />
+      <Promotion />
+      <NewItems />
+      <BRPlay />
+      <BeBetter />
+      <BrBenefit />
+      <Footer />
     </div>
   );
 }

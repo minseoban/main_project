@@ -1,38 +1,221 @@
-.App {
+body {
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #fff8f6;
+  color: #333;
+}
+
+/* Header */
+header {
+  position: relative;
+  width: 100%;
+  margin-bottom: 25px;
+  padding: 20px;
+  transition: background-color ease 0.3s;
+  z-index: 2;
+}
+
+header:hover {
+  background-color: #f986bd;
+}
+
+header:hover nav a {
+  color: #fff;
+}
+
+header:hover .default_img {
+  opacity: 0;
+}
+
+header:hover .hover_img {
+  opacity: 1;
+}
+
+nav ul li:hover {
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  translate: -570px;
+  font-size: 13px;
+}
+
+nav ul .logo_img {
+  position: relative;
+  margin-right: 20px;
+}
+
+.logo_img .hover_img {
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  /* transition: opacity 0.3s ease; */
+}
+
+.default_img {
+  opacity: 1;
+  z-index: 1;
+}
+
+.hover_img {
+  opacity: 0;
+  z-index: 2;
+}
+
+nav ul img {
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+
+nav ul li {
+  margin-top: 18px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.icons {
+  font-size: 220%;
+  float: right;
+  margin-right: 130px;
+  transform: translateY(-55px)
+}
+
+.icons .underline {
+  position: absolute;
+  right: 67px;
+}
+
+/* Main Banner */
+.main_banner {
+  text-align: center;
+  padding: 40px 20px;
+  background: #fff0f5;
+}
+
+.main_banner img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.main_banner img:nth-child(1) {
+  position: absolute;
+  margin-top: -130px;
+  z-index: 1;
+}
+
+.main_banner img:nth-child(2) {
+  position: relative;
+  margin: 0 0 0 30px;
+  bottom: 32px;
+}
+
+/* Promotions */
+.promotions {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.promotions h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.promotions ul {
+  list-style: none;
+  padding: 0;
+}
+
+.promotions li {
+  background: #ffe4e1;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* New Items */
+.new_items {
+  padding: 40px 20px;
+  background-color: #fffaf0;
+}
+
+.new_items h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.new_items ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.new_items li {
+  width: 150px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.new_items img {
+  width: 100%;
+  border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* BR Play */
+.br-play {
+  padding: 40px 20px;
+  background: #fce4ec;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Be Better */
+.be-better {
+  padding: 40px 20px;
+  background-color: #e0f7fa;
+}
+
+.be-better ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+/* Store Locator */
+.store-locator {
+  padding: 40px 20px;
+  background: #f3e5f5;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
   color: white;
+  padding: 20px;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer a {
+  color: #ffd1dc;
+  text-decoration: none;
 }
