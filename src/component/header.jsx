@@ -1,9 +1,22 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { GoPerson } from "react-icons/go";
 import { IoIosSearch } from "react-icons/io";
 
 
 function Header() {
+  useEffect(() => {
+    const handleScroll = () => {
+      const header = document.querySelector('header');
+      if (window.scrollY > 0) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <header>
       <nav>

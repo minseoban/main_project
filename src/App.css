@@ -7,12 +7,30 @@ body {
 
 /* Header */
 header {
-  position: relative;
+  position: sticky;
+  top: 0;
   width: 100%;
   margin-bottom: 25px;
   padding: 20px;
   transition: background-color ease 0.3s;
-  z-index: 2;
+  z-index: 5;
+}
+
+header.scrolled {
+  background-color: #f986bd;
+}
+
+header.scrolled nav a,
+header.scrolled nav ul li {
+  color: #fff;
+}
+
+header.scrolled .default_img {
+  opacity: 0;
+}
+
+header.scrolled .hover_img {
+  opacity: 1;
 }
 
 header:hover {
@@ -74,7 +92,7 @@ nav ul img {
 }
 
 nav ul li {
-  margin-top: 18px;
+  margin-top: 22px;
 }
 
 nav a {
@@ -97,7 +115,14 @@ nav a {
 }
 
 /* Main Banner */
+.main {
+  position: relative;
+  display: block;
+  background: #fff0f5;
+}
+
 .main_banner {
+  display: block;
   text-align: center;
   padding: 40px 20px;
   background: #fff0f5;
@@ -118,6 +143,17 @@ nav a {
   position: relative;
   margin: 0 0 0 30px;
   bottom: 32px;
+  border-radius: 15%;
+}
+
+.main_components {
+  position: absolute;
+  top: 40px; 
+  right: 130px;        
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 3;
 }
 
 /* Promotions */
