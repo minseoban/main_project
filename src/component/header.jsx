@@ -22,8 +22,8 @@ function Header() {
       <nav>
         <ul>
           <div className="logo_img">
-            <img className="default_img" src="./images/brlogo.png" alt="logo"></img>
-            <img className="hover_img" src="./images/brlogohover.png" alt="hoverlogo"></img>
+            <img className="default_img" src={process.env.PUBLIC_URL + "/images/brlogo.png"} alt="logo"></img>
+            <img className="hover_img" src={process.env.PUBLIC_URL + "/images/brlogohover.png"} alt="hoverlogo"></img>
           </div>
           <li><a href="#">Menu</a></li>
           <li><a href="#">BR Play</a></li>
