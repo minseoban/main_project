@@ -1,4 +1,5 @@
 body {
+  width: 100%;
   margin: 0;
   font-family: 'Noto Sans KR', sans-serif;
   background-color: #fff8f6;
@@ -158,13 +159,24 @@ nav a {
 
 /* Promotions */
 .promotions {
+  height: 750px;
   padding: 40px 20px;
   background-color: #fff;
 }
 
 .promotions h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
+  text-align: center;
+  font-family: "Titan One", sans-serif;
+  font-size: 45px;
+  margin-bottom: -10px;
+  color: #ada495c1;
+}
+
+.promotions h3 {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 80px;
+  font-weight: 1;
 }
 
 .promotions ul {
@@ -172,22 +184,70 @@ nav a {
   padding: 0;
 }
 
-.promotions li {
-  background: #ffe4e1;
-  margin-bottom: 15px;
+.promotion-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.promotion-card {
+  width: 300px;
+  overflow: hidden;
+}
+
+.promotion-card img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+}
+
+.promo-text {
   padding: 15px;
-  border-radius: 8px;
+  text-align: left;
+  color: #c3ae9f79;
+}
+
+.promo-text h4 {
+  float: left;
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-top: -0.5px;
+}
+
+.promo-text hr {
+  width: 700px;
+  margin: 10px auto;
+  border: 1px solid #f0e7d9c4;
+}
+
+.promo-text p {
+  margin-top: 25px;
+  font-size: 15px;
+  color: #666;
 }
 
 /* New Items */
 .new_items {
+  height: 900px;
   padding: 40px 20px;
-  background-color: #fffaf0;
+  background-color: #ffe4ea;
 }
 
 .new_items h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
+  text-align: center;
+  font-family: "Titan One", sans-serif;
+  font-size: 45px;
+  margin-bottom: -10px;
+  color: #ada495c1;
+}
+
+.new_items h3 {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 80px;
+  font-weight: 1;
 }
 
 .new_items ul {
@@ -210,11 +270,44 @@ nav a {
 }
 
 /* BR Play */
-.br-play {
+.br_play {
+  height: 820px;
   padding: 40px 20px;
-  background: #fce4ec;
+  background-image: url('/public/bg_play.jpg');
   text-align: center;
 }
+
+.br_play img {
+  transform: translateY(-290px);
+}
+
+.br_play h2 {
+  text-align: center;
+  font-family: "Titan One", sans-serif;
+  font-size: 55px;
+  font-weight: 100;
+  margin-top: 130px;
+  margin-bottom: -10px;
+  color: #000;
+}
+
+.br_play p {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 80px;
+  font-weight: 1;
+  color: #000;
+}
+
+.br_play .play_mainimg {
+  align-items: center;
+  transform: translateY(-640px);
+}
+
+.br_play .play_mainimg img {
+  margin-right: 10px;
+}
+
 
 /* Be Better */
 .be-better {
@@ -228,11 +321,40 @@ nav a {
 }
 
 /* Store Locator */
-.store-locator {
+.br_benefit {
   padding: 40px 20px;
   background: #f3e5f5;
   text-align: center;
 }
+
+.br_benefit h2 {
+  text-align: center;
+  font-family: "Titan One", sans-serif;
+  font-size: 55px;
+  font-weight: 100;
+  margin-top: 70px;
+  margin-bottom: -10px;
+  color: #ada495c1;
+}
+
+.br_benefit h3 {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 80px;
+  font-weight: 1;
+  color: #ada495c1;
+}
+
+.br_benefit h4 {
+  text-align: center;
+  font-family: "Titan One", sans-serif;
+  font-size: 40px;
+  font-weight: 100;
+  margin-top: 70px;
+  margin-bottom: -10px;
+  color: #ada495c1;
+}
+
 
 /* Footer */
 footer {
