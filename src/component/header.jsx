@@ -1,9 +1,8 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import { GoPerson } from "react-icons/go";
 import { IoIosSearch } from "react-icons/io";
 
-
-function Header() {
+function Header({ onNavigate }) {
   useEffect(() => {
     const handleScroll = () => {
       const header = document.querySelector('header');
@@ -22,13 +21,13 @@ function Header() {
       <nav>
         <ul>
           <div className="logo_img">
-            <img className="default_img" src={process.env.PUBLIC_URL + "/images/brlogo.png"} alt="logo"></img>
-            <img className="hover_img" src={process.env.PUBLIC_URL + "/images/brlogohover.png"} alt="hoverlogo"></img>
+            <a href="#" onClick={() => onNavigate("home")}><img className="default_img" src={process.env.PUBLIC_URL + "/images/brlogo.png"} alt="logo" /></a>
+            <a href="#" onClick={() => onNavigate("home")}><img className="hover_img" src={process.env.PUBLIC_URL + "/images/brlogohover.png"} alt="hoverlogo" /></a>
           </div>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">BR Play</a></li>
-          <li><a href="#">BR Story</a></li>
-          <li><a href="#">Delivery/Store</a></li>
+          <li><a href="#" onClick={() => onNavigate("menu")}>Menu</a></li>
+          <li><a href="#" onClick={() => onNavigate("br play")}>BR Play</a></li>
+          <li><a href="#" onClick={() => onNavigate("br story")}>BR Story</a></li>
+          <li><a href="#" onClick={() => onNavigate("deliverystore")}>Delivery/Store</a></li>
         </ul>
       </nav>
       <div className="icons">

@@ -377,3 +377,79 @@ footer a {
   color: #ffd1dc;
   text-decoration: none;
 }
+
+/* ----------------------------------------------------------------------------------------- */
+.menu_t {
+  height: 1000px;
+}
+.menu_t h2 {
+  text-align: center;
+  font-family: "Titan One", sans-serif;
+  font-size: 90px;
+  font-weight: 100;
+  margin-top: 70px;
+  margin-bottom: -10px;
+  color: #ada495c1;
+}
+.menu_t h3 {
+  text-align: center;
+  font-family: "Titan One", sans-serif;
+  font-size: 22px;
+  margin-top: 70px;
+  color: #ada495c1;
+}
+
+.brplay_t {
+  height: 1000px;
+}
+.brplay_t h2 {
+  text-align: center;
+  font-family: "Titan One", sans-serif;
+  font-size: 90px;
+  font-weight: 100;
+  margin-top: 70px;
+  margin-bottom: -10px;
+  color: #ada495c1;
+}
+.brplay_t h3 {
+  text-align: center;
+  font-family: "Titan One", sans-serif;
+  font-size: 22px;
+  margin-top: 70px;
+  color: #ada495c1;
+}
+
+
+.brstory_t {
+  height: 1000px;
+}
+.brstory_t h2 {
+  text-align: center;
+  font-family: "Titan One", sans-serif;
+  font-size: 90px;
+  font-weight: 100;
+  margin-top: 70px;
+  margin-bottom: -10px;
+  color: #ada495c1;
+}
+.brstory_t h3 {
+  text-align: center;
+  font-family: "Titan One", sans-serif;
+  font-size: 22px;
+  margin-top: 70px;
+  color: #ada495c1;
+}
+
+
+.deliverystore_t {
+  height: 1000px;
+}
+.deliverystore_t h2 {
+  text-align: center;
+  font-family: "Titan One", sans-serif;
+  font-size: 90px;
+  font-weight: 100;
+  margin-top: 70px;
+  margin-bottom: -10px;
+  color: #ada495c1;
+}
